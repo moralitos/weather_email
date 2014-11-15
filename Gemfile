@@ -38,6 +38,7 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'shoulda-matchers'
+  gem 'simplecov'
 end
 
 # Use ActiveModel has_secure_password

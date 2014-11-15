@@ -16,11 +16,8 @@ class WeatherService
   #   'wind':{'speed':1,'deg':100},
   #   'clouds':{'all':40},'dt':1416071716,'id':2643743,'name':'London','cod':200}
   #  }
-  def get_weather_for(city)
+  def weather_for(city)
     HTTParty.get("http://api.openweathermap.org/data/2.5/weather?q=#{city}")
   end
 
-  def weather_for(city)
-    JSON.parse(get_weather_for(city))
-  end
 end

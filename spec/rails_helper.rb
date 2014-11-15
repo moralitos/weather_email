@@ -1,3 +1,6 @@
+require 'simplecov'
+SimpleCov.start 'rails' 
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 require 'spec_helper'
@@ -56,6 +59,4 @@ RSpec.configure do |config|
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
-
-  config.treat_symbols_as_metadata_keys_with_true_values = true
 end
