@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?q=Reston,VA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 15 Nov 2014 20:32:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Source:
+      - redis
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":-77.35,"lat":38.96},"sys":{"type":1,"id":2856,"message":0.0241,"country":"United States of America","sunrise":1416052374,"sunset":1416088520},"weather":[{"id":800,"main":"Clear","description":"sky is clear","icon":"01d"}],"base":"cmc stations","main":{"temp":279.43,"pressure":1028,"humidity":41,"temp_min":277.15,"temp_max":282.15},"wind":{"speed":2.6,"deg":270},"clouds":{"all":1},"dt":1416080667,"id":4781530,"name":"Reston","cod":200}
+    http_version: 
+  recorded_at: Sat, 15 Nov 2014 20:32:55 GMT
+recorded_with: VCR 2.9.2

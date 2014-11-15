@@ -32,6 +32,14 @@ gem 'rails_12factor', group: :production
 
 gem 'rspec-rails'
 
+gem 'httparty'
+
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+  gem 'shoulda-matchers'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
