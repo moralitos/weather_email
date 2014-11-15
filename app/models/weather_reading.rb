@@ -1,6 +1,6 @@
 # This is the class that will store the weather being
 # recorded every hour
-class HourlyWeather < ActiveRecord::Base
+class WeatherReading < ActiveRecord::Base
   belongs_to :city
 
   # store the whole payload being retrieved

@@ -1,6 +1,6 @@
-class CreateHourlyWeathers < ActiveRecord::Migration
+class CreateWeatherReadings < ActiveRecord::Migration
   def change
-    create_table :hourly_weathers do |t|
+    create_table :weather_readings do |t|
       t.string :temperature
       t.string :humidity
       t.text :data

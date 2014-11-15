@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20141115204039) do
     t.datetime "updated_at"
   end
 
-  create_table "hourly_weathers", force: true do |t|
+  create_table "weather_readings", force: true do |t|
     t.string   "temperature"
     t.string   "humidity"
     t.text     "data"
